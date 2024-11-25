@@ -45,12 +45,15 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-        <!-- Springdoc OpenAPI Dependency for Swagger Documentation -->
-        <!-- https://mvnrepository.com/artifact/org.springdoc/springdoc-openapi-ui -->
         <dependency>
             <groupId>org.springdoc</groupId>
             <artifactId>springdoc-openapi-ui</artifactId>
             <version>1.8.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.gimpact</groupId>
+            <artifactId>schema</artifactId>
+            <version>1.0.0</version>
         </dependency>
     </dependencies>
 
