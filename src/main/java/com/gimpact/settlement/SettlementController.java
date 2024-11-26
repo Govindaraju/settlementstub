@@ -25,7 +25,6 @@ import java.util.UUID;
 @RequestMapping("api/settleTrade")
 @Slf4j
 public class SettlementController {
-
     private static SettlementResponse buildResponse(SettlementRequest settlementRequest, SettlementStatus status) {
         return SettlementResponse.builder().tradeId(settlementRequest.tradeId()).settlementId(UUID.randomUUID()).partyId(settlementRequest.partyClientId()).counterpartyId(settlementRequest.counterpartyClientId()).status(status).timestamp(LocalDateTime.now()).amount(new BigDecimal("1022.76")).build();
     }
@@ -46,5 +45,6 @@ public class SettlementController {
         log.info("Settlement successful {} ", resp);
         return ResponseEntity.ok(resp);
     }
+
 }
 
