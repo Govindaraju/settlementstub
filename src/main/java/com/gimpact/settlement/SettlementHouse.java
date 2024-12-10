@@ -4,10 +4,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SettlementStubApplication {
-
+public class SettlementHouse {
 	public static void main(String[] args) {
-		SpringApplication.run(SettlementStubApplication.class, args);
+		SpringApplication.run(SettlementHouse.class, args);
 	}
-
 }
